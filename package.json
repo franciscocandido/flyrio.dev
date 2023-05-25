@@ -14,7 +14,9 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "astro": "^2.4.1"
+    "@astrojs/vue": "^2.2.0",
+    "astro": "^2.5.0",
+    "vue": "^3.2.30"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
