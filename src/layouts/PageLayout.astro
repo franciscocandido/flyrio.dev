@@ -1,0 +1,21 @@
+---
+import BaseHead from "@components/BaseHead.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title }: Props = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <BaseHead>
+      <title>{title} | flyrio.dev</title>
+    </BaseHead>
+  </head>
+  <body class="bg-background text-foreground font-syne">
+    <slot />
+  </body>
+</html>
