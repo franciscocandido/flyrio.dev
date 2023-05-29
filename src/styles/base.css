@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Syne";
-  src: url("/fonts/Syne-VariableFont_wght.ttf");
+  font-family: 'Syne';
+  src: url('/fonts/Syne-VariableFont_wght.ttf');
   font-display: swap;
 }
 
 @font-face {
-  font-family: "SpaceGrotesk";
-  src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+  font-family: 'SpaceGrotesk';
+  src: url('/fonts/SpaceGrotesk-VariableFont_wght.ttf');
   font-display: swap;
 }
