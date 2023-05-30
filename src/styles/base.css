@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .default-margin {
+    @apply px-5 py-5 md:px-14 lg:px-28;
+  }
+}
+
 @font-face {
   font-family: 'Syne';
   src: url('/fonts/Syne-VariableFont_wght.ttf');
