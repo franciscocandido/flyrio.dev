@@ -2,7 +2,7 @@ import NavbarLink from '@components/NavbarLink';
 
 export default function Navbar() {
   return (
-    <nav className="default-margin flex w-full items-center justify-between">
+    <nav className="default-margin absolute flex w-full items-center justify-between">
       <a href="/">
         <img
           src="/logo.svg"

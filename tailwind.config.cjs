@@ -11,6 +11,11 @@ module.exports = {
         background: '#000000',
         foreground: '#ffffff',
         shadow: '#666666',
+        highlight: '#ff0080',
+      },
+      backgroundImage: {
+        'topo-texture-mobile': "url('/topo-texture-mobile.webp')",
+        'topo-texture-desktop': "url('/topo-texture-desktop.webp')",
       },
     },
   },
