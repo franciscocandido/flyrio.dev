@@ -1,5 +1,4 @@
 import BaseSection from '@components/BaseSection';
-import AboutSectionCarousel from '@components/AboutSectionCarousel';
 
 export default function AboutSection() {
   return (
@@ -21,7 +20,6 @@ export default function AboutSection() {
           algum conhecimento específico.
         </p>
       </div>
-      <AboutSectionCarousel />
     </BaseSection>
   );
 }
