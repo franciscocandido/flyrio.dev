@@ -1,4 +1,5 @@
 import BaseSection from '@components/BaseSection';
+import AboutSectionTools from '@components/AboutSectionTools';
 
 export default function AboutSection() {
   return (
@@ -22,11 +23,7 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div>
-          <h2 className="mt-10 text-center text-highlight">
-            Minhas Ferramentas
-          </h2>
-        </div>
+        <AboutSectionTools />
       </div>
     </BaseSection>
   );
