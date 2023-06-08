@@ -1,5 +1,6 @@
 import BaseSection from '@components/BaseSection';
 import AboutSectionTools from '@components/AboutSectionTools';
+import EmailButton from '@components/EmailButton';
 
 export default function AboutSection() {
   return (
@@ -22,7 +23,7 @@ export default function AboutSection() {
             pessoalmente sobre algum conhecimento específico.
           </p>
         </div>
-
+        <EmailButton />
         <AboutSectionTools />
       </div>
     </BaseSection>
