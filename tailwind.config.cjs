@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         background: '#000000',
         foreground: '#ffffff',
+        paragraph: '#999999',
         shadow: '#666666',
         highlight: '#ff0080',
       },
