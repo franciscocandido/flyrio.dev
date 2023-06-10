@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import useScrollToElement from '@hooks/useScrollToElement';
 
 interface Props {
   targetSection: string;
@@ -6,15 +7,7 @@ interface Props {
 }
 
 export default function NavbarLink({ children, targetSection }: Props) {
-  function scrollTo(target: string): void {
-    const element = document.getElementById(target);
-
-    element?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
+  const scrollTo = useScrollToElement;
   return (
     <button
       onClick={() => {
