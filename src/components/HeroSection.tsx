@@ -1,6 +1,6 @@
 import { MdArrowDownward } from 'react-icons/md/index';
 
-export default function Hero() {
+export default function Hero(): JSX.Element {
   return (
     <div className="default-margin flex h-screen flex-col items-center justify-center bg-topo-texture-mobile bg-cover shadow-[inset_0_0_150px_10px_#000000] sm:bg-topo-texture-desktop">
       <h1 className="font-title mt-auto text-center text-2xl font-bold md:text-5xl lg:text-5xl">

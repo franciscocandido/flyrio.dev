@@ -6,7 +6,11 @@ interface Props {
   id: string;
 }
 
-export default function BaseSection({ children, title, id }: Props) {
+export default function BaseSection({
+  children,
+  title,
+  id,
+}: Props): JSX.Element {
   return (
     <div
       className="default-margin my-20 flex w-full flex-col items-center "

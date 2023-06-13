@@ -8,7 +8,7 @@ import { IconContext } from 'react-icons';
 
 import AboutSectionTool from '@components/AboutSectionTool';
 
-export default function AboutSectionTools() {
+export default function AboutSectionTools(): JSX.Element {
   return (
     <IconContext.Provider value={{ size: '30px' }}>
       <h3 className="mb-5 mt-10 text-center text-highlight">
