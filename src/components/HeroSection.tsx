@@ -1,3 +1,4 @@
+import useScrollToElement from '@hooks/useScrollToElement';
 import { MdArrowDownward } from 'react-icons/md/index';
 
 export default function Hero(): JSX.Element {
@@ -9,7 +10,12 @@ export default function Hero(): JSX.Element {
         <br /> um desenvolvedor frontend do Brasil
       </h1>
 
-      <div className="mt-auto flex flex-col items-center gap-y-3 pb-20">
+      <div
+        onClick={() => {
+          scrollTo('about');
+        }}
+        title="Clique para Rolar"
+        className="mt-auto flex cursor-pointer flex-col items-center gap-y-3 pb-20">
         <span className="text-2xl font-bold">Scroll</span>
         <MdArrowDownward className="animate-bounce" size="50px" />
       </div>

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import useScrollToElement from '@hooks/useScrollToElement';
 
 interface Props {
   targetSection: string;
