@@ -2,7 +2,7 @@ import BaseSection from '@components/BaseSection';
 import AboutSectionTools from '@components/AboutSectionTools';
 import EmailButton from '@components/EmailButton';
 
-export default function AboutSection() {
+export default function AboutSection(): JSX.Element {
   return (
     <BaseSection title="Sobre Mim" id="about">
       <div className="mx-10 flex flex-col text-left font-spaceGrotesk text-sm font-bold text-paragraph md:mx-52 md:text-base">

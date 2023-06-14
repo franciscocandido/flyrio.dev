@@ -1,6 +1,6 @@
 import NavbarLink from '@components/NavbarLink';
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   return (
     <nav className="default-margin absolute flex w-full items-center justify-between">
       <a href="/">

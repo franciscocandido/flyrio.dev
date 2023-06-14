@@ -6,8 +6,19 @@ interface Props {
   children: ReactNode;
 }
 
-export default function NavbarLink({ children, targetSection }: Props) {
-  const scrollTo = useScrollToElement;
+export default function NavbarLink({
+  children,
+  targetSection,
+}: Props): JSX.Element {
+  function scrollTo(target: string): void {
+    const element = document.getElementById(target);
+
+    element?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
   return (
     <button
       onClick={() => {
