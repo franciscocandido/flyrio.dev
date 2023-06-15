@@ -6,7 +6,7 @@ import {
 } from 'react-icons/si/index';
 import { IconContext } from 'react-icons';
 
-import AboutSectionTool from '@components/AboutSectionTool';
+import LinkWithIcon from '@components/LinkWithIcon';
 
 export default function AboutSectionTools(): JSX.Element {
   return (
@@ -15,23 +15,23 @@ export default function AboutSectionTools(): JSX.Element {
         Minhas Ferramentas
       </h3>
       <div className="grid grid-flow-col grid-rows-2 place-content-center gap-5 md:grid-rows-1">
-        <AboutSectionTool
-          name="TypeScript"
+        <LinkWithIcon
+          content="TypeScript"
           link="https://www.typescriptlang.org/">
           <SiTypescript />
-        </AboutSectionTool>
+        </LinkWithIcon>
 
-        <AboutSectionTool name="Next.JS" link="https://nextjs.org/">
+        <LinkWithIcon content="Next.JS" link="https://nextjs.org/">
           <SiNextdotjs />
-        </AboutSectionTool>
+        </LinkWithIcon>
 
-        <AboutSectionTool name="Astro" link="https://astro.build/">
+        <LinkWithIcon content="Astro" link="https://astro.build/">
           <SiAstro />
-        </AboutSectionTool>
+        </LinkWithIcon>
 
-        <AboutSectionTool name="TailwindCSS" link="https://tailwindcss.com/">
+        <LinkWithIcon content="TailwindCSS" link="https://tailwindcss.com/">
           <SiTailwindcss />
-        </AboutSectionTool>
+        </LinkWithIcon>
       </div>
     </IconContext.Provider>
   );
