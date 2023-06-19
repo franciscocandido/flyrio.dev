@@ -12,7 +12,7 @@ export default function Hero(): JSX.Element {
 
       <div
         onClick={() => {
-          scrollTo('about');
+          useScrollToElement('about');
         }}
         title="Clique para Rolar"
         className="mt-auto flex cursor-pointer flex-col items-center gap-y-3 pb-20">
