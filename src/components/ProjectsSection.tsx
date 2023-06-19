@@ -10,9 +10,10 @@ export default function ProjectsSection(): JSX.Element {
   return (
     <BaseSection title="Projetos" id="projects">
       {allProjects.map(({ data, slug }) => (
-        <div className="default-margin grid grid-cols-1 place-items-center gap-10 md:grid-cols-2 xl:grid-cols-3">
+        <div
+          key={slug}
+          className="default-margin grid grid-cols-1 place-items-center gap-10 md:grid-cols-2 xl:grid-cols-3">
           <ProjectCard
-            key={slug}
             path={`/projects/${slug}`}
             title={data.title}
             description={data.description}
