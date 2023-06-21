@@ -1,4 +1,4 @@
-import ProjectSectionTags from '@components/ProjectSectionTags';
+import Tags from '@components/Tags';
 
 interface Props {
   tags: String[];
@@ -23,7 +23,7 @@ export default function ProjectCard({
       <div className="flex flex-col gap-y-3 font-spaceGrotesk transition hover:-translate-y-1 hover:cursor-pointer hover:text-highlight">
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="font-bold text-shadow">{description}</p>
-        <ProjectSectionTags tags={tags} />
+        <Tags tags={tags} />
         <img src={`/projects/${image.src}`} alt={image.alt} />
       </div>
     </a>
