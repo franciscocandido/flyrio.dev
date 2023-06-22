@@ -1,8 +1,8 @@
 import {
-  SiTypescript,
+  SiJavascript,
+  SiReact,
   SiTailwindcss,
   SiAstro,
-  SiNextdotjs,
 } from 'react-icons/si/index';
 import { IconContext } from 'react-icons';
 
@@ -16,13 +16,13 @@ export default function AboutSectionTools(): JSX.Element {
       </h3>
       <div className="grid grid-flow-col grid-rows-2 place-content-center gap-5 md:grid-rows-1">
         <LinkWithIcon
-          content="TypeScript"
-          link="https://www.typescriptlang.org/">
-          <SiTypescript />
+          content="JavaScript"
+          link="https://wikipedia.org/wiki/JavaScript">
+          <SiJavascript />
         </LinkWithIcon>
 
-        <LinkWithIcon content="Next.JS" link="https://nextjs.org/">
-          <SiNextdotjs />
+        <LinkWithIcon content="React" link="https://react.dev/">
+          <SiReact />
         </LinkWithIcon>
 
         <LinkWithIcon content="Astro" link="https://astro.build/">
