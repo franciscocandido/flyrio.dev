@@ -9,6 +9,9 @@ const projectsCollection = defineCollection({
       src: z.string(),
       alt: z.string(),
     }),
+    banner: z.object({
+      src: z.string(),
+    }),
     title: z.string(),
     description: z.string(),
   }),
