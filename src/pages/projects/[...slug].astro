@@ -1,7 +1,10 @@
 ---
+import { MdArrowBack } from 'react-icons/md';
+
 import PageLayout from '@layouts/PageLayout.astro';
 import Footer from '@components/Footer';
 import Tags from '@components/Tags';
+
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -17,7 +20,13 @@ const { Content } = await project.render();
 ---
 
 <PageLayout title={project.data.title}>
-  <div class="mx-80 font-spaceGrotesk">
+  <div class="px-8 py-5 font-spaceGrotesk md:px-40 lg:px-52 xl:px-80">
+    <a
+      href="/"
+      title="Voltar"
+      class="default-margin text-shadow transition hover:cursor-pointer hover:text-foreground">
+      <MdArrowBack size="40px" />
+    </a>
     <img
       class="aria-hidden py-10"
       role="presentation"
