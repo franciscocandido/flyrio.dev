@@ -34,7 +34,7 @@ const { Content } = await project.render();
     />
     <h1 class="pb-3 text-5xl font-bold">{project.data.title}</h1>
     <Tags tags={project.data.tags} />
-    <article class="mt-5 break-words pt-5 font-syne text-lg">
+    <article class="prose prose-invert mt-10">
       <Content />
     </article>
   </div>
