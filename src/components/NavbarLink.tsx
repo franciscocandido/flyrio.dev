@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import useScrollToElement from '@hooks/useScrollToElement';
+import useScrollIntoView from '@hooks/useScrollIntoView';
 
 interface Props {
   targetSection: string;
@@ -10,11 +10,13 @@ export default function NavbarLink({
   children,
   targetSection,
 }: Props): JSX.Element {
+  const scrollToSection = useScrollIntoView(targetSection, {
+    behavior: 'smooth',
+  });
+
   return (
     <button
-      onClick={() => {
-        useScrollToElement(targetSection);
-      }}
+      onClick={scrollToSection}
       className="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base">
       {children}
     </button>
