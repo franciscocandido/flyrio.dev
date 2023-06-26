@@ -19,13 +19,15 @@ export default function ProjectCard({
   path,
 }: Props): JSX.Element {
   return (
-    <a href={path}>
-      <div className="flex flex-col gap-y-3 font-spaceGrotesk transition hover:-translate-y-1 hover:cursor-pointer hover:text-highlight">
-        <h1 className="text-3xl font-bold">{title}</h1>
-        <p className="font-bold text-shadow">{description}</p>
-        <Tags tags={tags} />
-        <img src={`/projects/${image.src}`} alt={image.alt} />
-      </div>
+    <a
+      href={path}
+      className="group flex flex-col gap-y-3 rounded border border-accent-2 p-5 font-spaceGrotesk transition hover:bg-accent-1">
+      <h1 className="text-3xl font-bold group-hover:text-highlight group-hover:underline">
+        {title}
+      </h1>
+      <p className="font-bold text-shadow">{description}</p>
+      <Tags tags={tags} />
+      <img className="rounded" src={`/projects/${image.src}`} alt={image.alt} />
     </a>
   );
 }

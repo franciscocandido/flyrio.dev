@@ -13,6 +13,8 @@ module.exports = {
         paragraph: '#999999',
         shadow: '#666666',
         highlight: '#ff0080',
+        'accent-1': '#111111',
+        'accent-2': '#333333',
       },
       backgroundImage: {
         'topo-texture-mobile': "url('/topo-texture-mobile.webp')",
