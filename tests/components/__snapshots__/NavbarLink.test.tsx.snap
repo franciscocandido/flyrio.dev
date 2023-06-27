@@ -1,27 +1,27 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Footer > renders correctly 1`] = `
+exports[`NavbarLink > renders correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-shadow"
+      <button
+        class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
       >
-        Copyright 
-        2023
-         Francisco Cândido
-      </div>
+        <h1>
+          Testing
+        </h1>
+      </button>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-shadow"
+    <button
+      class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
     >
-      Copyright 
-      2023
-       Francisco Cândido
-    </div>
+      <h1>
+        Testing
+      </h1>
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
