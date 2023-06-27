@@ -1,69 +1,10 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ProjectSectionCard > renders correctly 1`] = `
+exports[`Tags > renders correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <a
-        class="group flex flex-col gap-y-3 rounded border border-accent-2 p-5 font-spaceGrotesk transition hover:bg-accent-1"
-        href="/best-post"
-      >
-        <h1
-          class="text-3xl font-bold group-hover:text-highlight group-hover:underline"
-        >
-          Awesome Title
-        </h1>
-        <p
-          class="font-bold text-shadow"
-        >
-          The Best Description Ever
-        </p>
-        <div
-          class="flex items-start gap-x-1 text-xs font-bold"
-        >
-          <span
-            class="rounded border border-shadow p-1 text-xs text-shadow"
-            data-testid="tag"
-          >
-            Python
-          </span>
-          <span
-            class="rounded border border-shadow p-1 text-xs text-shadow"
-            data-testid="tag"
-          >
-            AWS
-          </span>
-          <span
-            class="rounded border border-shadow p-1 text-xs text-shadow"
-            data-testid="tag"
-          >
-            TypeScript
-          </span>
-        </div>
-        <img
-          alt="example image"
-          class="rounded"
-          src="/projects/example.png"
-        />
-      </a>
-    </div>
-  </body>,
-  "container": <div>
-    <a
-      class="group flex flex-col gap-y-3 rounded border border-accent-2 p-5 font-spaceGrotesk transition hover:bg-accent-1"
-      href="/best-post"
-    >
-      <h1
-        class="text-3xl font-bold group-hover:text-highlight group-hover:underline"
-      >
-        Awesome Title
-      </h1>
-      <p
-        class="font-bold text-shadow"
-      >
-        The Best Description Ever
-      </p>
       <div
         class="flex items-start gap-x-1 text-xs font-bold"
       >
@@ -71,27 +12,46 @@ exports[`ProjectSectionCard > renders correctly 1`] = `
           class="rounded border border-shadow p-1 text-xs text-shadow"
           data-testid="tag"
         >
-          Python
+          Java
         </span>
         <span
           class="rounded border border-shadow p-1 text-xs text-shadow"
           data-testid="tag"
         >
-          AWS
+          Tetris
         </span>
         <span
           class="rounded border border-shadow p-1 text-xs text-shadow"
           data-testid="tag"
         >
-          TypeScript
+          Rage
         </span>
       </div>
-      <img
-        alt="example image"
-        class="rounded"
-        src="/projects/example.png"
-      />
-    </a>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex items-start gap-x-1 text-xs font-bold"
+    >
+      <span
+        class="rounded border border-shadow p-1 text-xs text-shadow"
+        data-testid="tag"
+      >
+        Java
+      </span>
+      <span
+        class="rounded border border-shadow p-1 text-xs text-shadow"
+        data-testid="tag"
+      >
+        Tetris
+      </span>
+      <span
+        class="rounded border border-shadow p-1 text-xs text-shadow"
+        data-testid="tag"
+      >
+        Rage
+      </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

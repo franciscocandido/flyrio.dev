@@ -7,7 +7,8 @@ export default function ProjectSectionTags({ tags }: Props): JSX.Element {
     <div className="flex items-start gap-x-1 text-xs font-bold">
       {tags.map((tag) => (
         <span
-          className="rounded border border-shadow p-1 text-shadow"
+          className="rounded border border-shadow p-1 text-xs text-shadow"
+          data-testid="tag"
           key={tag.valueOf()}>
           {tag}
         </span>
