@@ -1,11 +1,11 @@
 import BaseSection from '@components/BaseSection';
-import AboutSectionTools from '@components/AboutSectionTools';
+import AboutSectionTools from '@components/AboutSection/AboutSectionTools';
 import EmailButton from '@components/EmailButton';
 
-export default function AboutSection(): JSX.Element {
+export default function Aboutsection(): JSX.Element {
   return (
     <BaseSection title="Sobre Mim" id="about">
-      <div className="mx-10 flex flex-col text-left font-spaceGrotesk text-sm font-bold text-paragraph md:mx-52 md:text-base">
+      <div className="mx-10 flex flex-col text-left font-spaceGrotesk font-bold text-paragraph md:mx-52">
         <div className="flex flex-col gap-y-5">
           <p>
             Atualmente, tenho 18 anos e estudo JavaScript e seu ecossistema há
@@ -23,6 +23,7 @@ export default function AboutSection(): JSX.Element {
             pessoalmente sobre algum conhecimento específico.
           </p>
         </div>
+
         <EmailButton />
         <AboutSectionTools />
       </div>

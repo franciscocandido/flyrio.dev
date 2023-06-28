@@ -12,11 +12,11 @@ export default function BaseSection({
   id,
 }: Props): JSX.Element {
   return (
-    <div
+    <section
       className="default-margin my-20 flex w-full flex-col items-center "
       id={id}>
       <h2 className="mb-14 text-5xl font-bold">{title}</h2>
       <div>{children}</div>
-    </div>
+    </section>
   );
 }
