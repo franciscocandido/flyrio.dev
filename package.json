@@ -12,7 +12,10 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown ."
+    "**/*": [
+      "prettier --write --ignore-unknown .",
+      "vitest test --run"
+    ]
   },
   "config": {
     "commitizen": {
