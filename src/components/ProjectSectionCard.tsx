@@ -1,4 +1,4 @@
-import Tags from '@components/Tags';
+import TagList from '@components/TagList';
 
 interface Props {
   tags: String[];
@@ -26,7 +26,7 @@ export default function ProjectCard({
         {title}
       </h1>
       <p className="font-bold text-shadow">{description}</p>
-      <Tags tags={tags} />
+      <TagList tagsArray={tags} />
       <img className="rounded" src={`/projects/${image.src}`} alt={image.alt} />
     </a>
   );

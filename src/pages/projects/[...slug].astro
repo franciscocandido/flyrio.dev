@@ -1,9 +1,9 @@
 ---
-import { MdArrowBack } from 'react-icons/md';
+import { MdArrowBack } from 'react-icons/md/index.js';
 
 import PageLayout from '@layouts/PageLayout.astro';
 import Footer from '@components/Footer';
-import Tags from '@components/Tags';
+import TagList from '@components/TagList';
 
 import { getCollection } from 'astro:content';
 
@@ -33,7 +33,7 @@ const { Content } = await project.render();
       src={project.data.banner.src}
     />
     <h1 class="pb-3 text-5xl font-bold">{project.data.title}</h1>
-    <Tags tags={project.data.tags} />
+    <TagList tagsArray={project.data.tags} />
     <article class="prose prose-invert mt-10">
       <Content />
     </article>
