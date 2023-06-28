@@ -2,7 +2,7 @@ import BaseSection from '@components/BaseSection';
 import EmailButton from '@components/EmailButton';
 import LinkWithIcon from '@components/LinkWithIcon';
 
-import { SiGithub, SiLinkedin } from 'react-icons/si/index';
+import { SiGithub, SiLinkedin, SiSlack } from 'react-icons/si/index';
 import { IconContext } from 'react-icons';
 
 export default function ContactSection(): JSX.Element {
