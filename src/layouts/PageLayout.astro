@@ -15,7 +15,8 @@ const { title }: Props = Astro.props;
       <title>{title} | flyrio.dev</title>
     </BaseHead>
   </head>
-  <body class="bg-background font-syne text-foreground">
+  <body
+    class="bg-background font-syne text-foreground scrollbar-thin scrollbar-track-accent-1 scrollbar-thumb-accent-2 scrollbar-corner-accent-2 hover:scrollbar-thumb-shadow">
     <slot />
   </body>
 </html>
