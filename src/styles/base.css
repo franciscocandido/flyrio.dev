@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .default-margin {
     @apply px-5 py-5 md:px-14 lg:px-28;
   }
