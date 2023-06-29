@@ -1,4 +1,4 @@
-import SmoothScrollLink from '@components/SmoothScrollLink';
+import NavbarLink from '@components/NavbarLink';
 
 export default function Navbar(): JSX.Element {
   return (
@@ -11,10 +11,10 @@ export default function Navbar(): JSX.Element {
         />
       </a>
 
-      <div className="flex flex-col items-end md:flex-row md:gap-x-5">
-        <SmoothScrollLink targetId="about">Sobre</SmoothScrollLink>
-        <SmoothScrollLink targetId="projects">Projetos</SmoothScrollLink>
-        <SmoothScrollLink targetId="contact">Contato</SmoothScrollLink>
+      <div className="flex flex-col md:flex-row md:gap-x-5">
+        <NavbarLink targetSection="about">Sobre Mim</NavbarLink>
+        <NavbarLink targetSection="projects">Projetos</NavbarLink>
+        <NavbarLink targetSection="contact">Contato</NavbarLink>
       </div>
     </nav>
   );

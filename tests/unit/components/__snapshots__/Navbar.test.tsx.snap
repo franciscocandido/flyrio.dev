@@ -18,26 +18,23 @@ exports[`<Navbar /> > should match the snapshot 1`] = `
           />
         </a>
         <div
-          class="flex flex-col items-end md:flex-row md:gap-x-5"
+          class="flex flex-col md:flex-row md:gap-x-5"
         >
-          <a
-            class="undefined cursor-pointer font-spaceGrotesk font-bold text-foreground transition hover:text-shadow hover:underline"
-            href="#about"
+          <button
+            class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
           >
-            Sobre
-          </a>
-          <a
-            class="undefined cursor-pointer font-spaceGrotesk font-bold text-foreground transition hover:text-shadow hover:underline"
-            href="#projects"
+            Sobre Mim
+          </button>
+          <button
+            class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
           >
             Projetos
-          </a>
-          <a
-            class="undefined cursor-pointer font-spaceGrotesk font-bold text-foreground transition hover:text-shadow hover:underline"
-            href="#contact"
+          </button>
+          <button
+            class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
           >
             Contato
-          </a>
+          </button>
         </div>
       </nav>
     </div>
@@ -56,26 +53,23 @@ exports[`<Navbar /> > should match the snapshot 1`] = `
         />
       </a>
       <div
-        class="flex flex-col items-end md:flex-row md:gap-x-5"
+        class="flex flex-col md:flex-row md:gap-x-5"
       >
-        <a
-          class="undefined cursor-pointer font-spaceGrotesk font-bold text-foreground transition hover:text-shadow hover:underline"
-          href="#about"
+        <button
+          class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
         >
-          Sobre
-        </a>
-        <a
-          class="undefined cursor-pointer font-spaceGrotesk font-bold text-foreground transition hover:text-shadow hover:underline"
-          href="#projects"
+          Sobre Mim
+        </button>
+        <button
+          class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
         >
           Projetos
-        </a>
-        <a
-          class="undefined cursor-pointer font-spaceGrotesk font-bold text-foreground transition hover:text-shadow hover:underline"
-          href="#contact"
+        </button>
+        <button
+          class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
         >
           Contato
-        </a>
+        </button>
       </div>
     </nav>
   </div>,
