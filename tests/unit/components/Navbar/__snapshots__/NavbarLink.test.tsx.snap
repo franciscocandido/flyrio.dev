@@ -1,77 +1,31 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`<Navbar /> > should match the snapshot 1`] = `
+exports[`<NavbarLink /> > should match to snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <nav
-        class="default-margin absolute flex w-full items-center justify-between"
+      <li
+        class="transition hover:text-shadow hover:underline"
       >
         <a
-          href="/"
+          href="#games"
         >
-          <img
-            alt="Um logotipo que é letra F composta por figuras hexágonais."
-            class="w-10"
-            src="/logo.svg"
-          />
+          Jogs
         </a>
-        <div
-          class="flex flex-col md:flex-row md:gap-x-5"
-        >
-          <button
-            class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
-          >
-            Sobre Mim
-          </button>
-          <button
-            class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
-          >
-            Projetos
-          </button>
-          <button
-            class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
-          >
-            Contato
-          </button>
-        </div>
-      </nav>
+      </li>
     </div>
   </body>,
   "container": <div>
-    <nav
-      class="default-margin absolute flex w-full items-center justify-between"
+    <li
+      class="transition hover:text-shadow hover:underline"
     >
       <a
-        href="/"
+        href="#games"
       >
-        <img
-          alt="Um logotipo que é letra F composta por figuras hexágonais."
-          class="w-10"
-          src="/logo.svg"
-        />
+        Jogs
       </a>
-      <div
-        class="flex flex-col md:flex-row md:gap-x-5"
-      >
-        <button
-          class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
-        >
-          Sobre Mim
-        </button>
-        <button
-          class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
-        >
-          Projetos
-        </button>
-        <button
-          class="text-right font-spaceGrotesk text-sm font-bold transition hover:text-shadow md:text-center md:text-base"
-        >
-          Contato
-        </button>
-      </div>
-    </nav>
+    </li>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
