@@ -5,8 +5,8 @@ exports[`<AboutSectionTool /> > should match snapshot 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+      <a
+        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
       >
         <svg
           fill="currentColor"
@@ -36,12 +36,12 @@ exports[`<AboutSectionTool /> > should match snapshot 1`] = `
         <p>
           Money
         </p>
-      </div>
+      </a>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+    <a
+      class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
     >
       <svg
         fill="currentColor"
@@ -71,7 +71,7 @@ exports[`<AboutSectionTool /> > should match snapshot 1`] = `
       <p>
         Money
       </p>
-    </div>
+    </a>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

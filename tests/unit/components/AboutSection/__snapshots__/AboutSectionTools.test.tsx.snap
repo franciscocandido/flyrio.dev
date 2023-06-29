@@ -13,8 +13,9 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
       <div
         class="grid grid-flow-col grid-rows-2 place-content-center gap-5 md:grid-rows-1"
       >
-        <div
-          class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+        <a
+          class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+          href="https://developer.mozilla.org/docs/Web/JavaScript"
         >
           <svg
             fill="currentColor"
@@ -35,9 +36,10 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
           <p>
             JavaScript
           </p>
-        </div>
-        <div
-          class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+        </a>
+        <a
+          class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+          href="https://react.dev/"
         >
           <svg
             fill="currentColor"
@@ -58,9 +60,10 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
           <p>
             React
           </p>
-        </div>
-        <div
-          class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+        </a>
+        <a
+          class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+          href="https://tailwindcss.com/"
         >
           <svg
             fill="currentColor"
@@ -81,9 +84,10 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
           <p>
             TailwindCSS
           </p>
-        </div>
-        <div
-          class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+        </a>
+        <a
+          class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+          href="https://astro.build/"
         >
           <svg
             fill="currentColor"
@@ -104,7 +108,7 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
           <p>
             Astro
           </p>
-        </div>
+        </a>
       </div>
     </div>
   </body>,
@@ -117,8 +121,9 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
     <div
       class="grid grid-flow-col grid-rows-2 place-content-center gap-5 md:grid-rows-1"
     >
-      <div
-        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+      <a
+        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+        href="https://developer.mozilla.org/docs/Web/JavaScript"
       >
         <svg
           fill="currentColor"
@@ -139,9 +144,10 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
         <p>
           JavaScript
         </p>
-      </div>
-      <div
-        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+      </a>
+      <a
+        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+        href="https://react.dev/"
       >
         <svg
           fill="currentColor"
@@ -162,9 +168,10 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
         <p>
           React
         </p>
-      </div>
-      <div
-        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+      </a>
+      <a
+        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+        href="https://tailwindcss.com/"
       >
         <svg
           fill="currentColor"
@@ -185,9 +192,10 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
         <p>
           TailwindCSS
         </p>
-      </div>
-      <div
-        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:text-highlight"
+      </a>
+      <a
+        class="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
+        href="https://astro.build/"
       >
         <svg
           fill="currentColor"
@@ -208,7 +216,7 @@ exports[`<AboutSectionTools /> > should match to snapshot 1`] = `
         <p>
           Astro
         </p>
-      </div>
+      </a>
     </div>
   </div>,
   "debug": [Function],
