@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface PositionProps {
   x: number | null;
@@ -11,7 +11,7 @@ export default function useWindowScrollPosition(): PositionProps[] {
     y: null,
   });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const onScroll = (): void => {
       setPosition({ x: window.scrollX, y: window.scrollY });
     };
