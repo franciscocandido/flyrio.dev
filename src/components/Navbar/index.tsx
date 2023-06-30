@@ -3,7 +3,7 @@ import useWindowScrollPosition from '@hooks/useWindowScrollPosition';
 import { useEffect, useState } from 'react';
 
 export default function Navbar(): JSX.Element {
-  const [isOnTop, setIsOnTop] = useState<boolean | null>(null);
+  const [isOnTop, setIsOnTop] = useState<boolean | null>(true);
   const [{ y }] = useWindowScrollPosition();
 
   useEffect(() => {
