@@ -21,7 +21,7 @@ export default function Navbar(): JSX.Element {
           ? 'border-b-transparent bg-transparent'
           : 'border-b-accent-2 bg-background bg-opacity-90 backdrop-blur'
       }`}>
-      <a href="/">
+      <a href="/#top">
         <img
           className="w-10 transition hover:-translate-y-0.5"
           src="/brand.svg"
