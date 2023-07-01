@@ -12,7 +12,9 @@ export default function ContactSection(): JSX.Element {
         <EmailButton />
 
         <div className="mt-10 flex justify-center gap-x-10">
-          <ContactSectionLink href="https://github.com/franciscocandido/">
+          <ContactSectionLink
+            href="https://github.com/franciscocandido/"
+            name="Meu perfil no GitHub.">
             <SiGithub />
           </ContactSectionLink>
         </div>
