@@ -1,9 +1,9 @@
 ---
-import PageLayout from '@layouts/PageLayout.astro';
+import MainLayout from '@layouts/MainLayout.astro';
 import RandomErrorMessage from '@components/RandomErrorMessage';
 ---
 
-<PageLayout title="404">
+<MainLayout title="404" description="Página não encontrada">
   <div
     class="flex h-screen w-full flex-col items-center justify-center font-spaceGrotesk">
     <h1
@@ -18,7 +18,7 @@ import RandomErrorMessage from '@components/RandomErrorMessage';
       Voltar para a segurança
     </a>
   </div>
-</PageLayout>
+</MainLayout>
 
 <style>
   .glitch-wrapper {

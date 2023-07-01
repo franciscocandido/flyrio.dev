@@ -1,5 +1,5 @@
 ---
-import PageLayout from '@layouts/PageLayout.astro';
+import MainLayout from '@layouts/MainLayout.astro';
 
 import Navbar from '@components/Navbar';
 import HeroSection from '@components/HeroSection';
@@ -9,11 +9,11 @@ import ContactSection from '@components/ContactSection';
 import Footer from '@components/Footer';
 ---
 
-<PageLayout title="Início">
+<MainLayout title="Início" description="Bem-vindo ao meu portfólio">
   <Navbar client:load />
   <HeroSection />
   <AboutSection />
   <ProjectsSection />
   <ContactSection />
   <Footer />
-</PageLayout>
+</MainLayout>

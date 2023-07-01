@@ -1,5 +1,5 @@
 ---
-import PageLayout from '@layouts/PageLayout.astro';
+import MainLayout from '@layouts/MainLayout.astro';
 import Footer from '@components/Footer';
 import TagList from '@components/TagList';
 import { MdArrowBack } from 'react-icons/md/index.js';
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<PageLayout title={project.data.title}>
+<MainLayout title={project.data.title} description={project.data.description}>
   <div class="px-8 py-5 font-spaceGrotesk md:px-40 lg:px-52 xl:px-80">
     <a
       href="/#projects"
@@ -48,4 +48,4 @@ export async function getStaticPaths() {
   </div>
 
   <Footer />
-</PageLayout>
+</MainLayout>
