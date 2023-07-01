@@ -12,6 +12,6 @@ describe('<Footer />', () => {
     const currentYear = new Date().getFullYear();
     render(<Footer />);
 
-    expect(screen.getByText(`Copyright 2023-${currentYear} Francisco Cândido`));
+    expect(screen.getByText(`© 2023-${currentYear} Francisco Cândido`));
   });
 });

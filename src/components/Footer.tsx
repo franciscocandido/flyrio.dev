@@ -5,7 +5,7 @@ export default function Footer(): JSX.Element {
 
   return (
     <footer className="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-paragraph">
-      Copyright 2023-{currentYear.current} Francisco Cândido
+      &copy; 2023-{currentYear.current} Francisco Cândido
     </footer>
   );
 }

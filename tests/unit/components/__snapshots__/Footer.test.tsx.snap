@@ -8,7 +8,7 @@ exports[`<Footer /> > should match to snapshot 1`] = `
       <footer
         class="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-paragraph"
       >
-        Copyright 2023-
+        © 2023-
         2023
          Francisco Cândido
       </footer>
@@ -18,7 +18,7 @@ exports[`<Footer /> > should match to snapshot 1`] = `
     <footer
       class="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-paragraph"
     >
-      Copyright 2023-
+      © 2023-
       2023
        Francisco Cândido
     </footer>
