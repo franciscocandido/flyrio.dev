@@ -3,6 +3,7 @@ import MainLayout from '@layouts/MainLayout.astro';
 import Footer from '@components/Footer';
 import TagList from '@components/TagList';
 import Link from '@components/Link';
+import Navbar from '@components/Navbar';
 import { MdArrowBack, MdWeb, MdCode } from 'react-icons/md';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
@@ -27,16 +28,11 @@ export async function getStaticPaths() {
 ---
 
 <MainLayout title={project.data.title} description={project.data.description}>
-  <div class="px-8 py-5 font-spaceGrotesk md:px-40 lg:px-52 xl:px-80">
-    <a
-      href="/#projects"
-      title="Voltar"
-      class="default-margin text-shadow transition hover:cursor-pointer hover:text-foreground">
-      <MdArrowBack size="40px" />
-    </a>
+  <Navbar client:load />
 
+  <div class="px-8 py-5 font-spaceGrotesk md:px-40 lg:px-52 xl:px-80">
     <img
-      class="aria-hidden py-10"
+      class="aria-hidden mt-20 py-10"
       role="presentation"
       src={project.data.banner.src}
     />

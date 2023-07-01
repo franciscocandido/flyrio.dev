@@ -30,9 +30,9 @@ export default function Navbar(): JSX.Element {
       </a>
 
       <ul className="flex flex-col text-right font-spaceGrotesk font-bold md:flex-row md:gap-5">
-        <NavbarLink href="#about" content="Sobre Mim" />
-        <NavbarLink href="#projects" content="Projetos" />
-        <NavbarLink href="#contact" content="Contato" />
+        <NavbarLink href="/#about" content="Sobre Mim" />
+        <NavbarLink href="/#projects" content="Projetos" />
+        <NavbarLink href="/#contact" content="Contato" />
       </ul>
     </nav>
   );
