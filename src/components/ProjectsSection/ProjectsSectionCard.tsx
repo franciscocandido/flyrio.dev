@@ -25,7 +25,7 @@ export default function ProjectsSectionCard({
       <h1 className="text-3xl font-bold group-hover:text-highlight ">
         {title}
       </h1>
-      <p className="font-bold text-shadow">{description}</p>
+      <p className="font-bold text-paragraph">{description}</p>
       <TagList tagsArray={tags} />
       <img className="rounded" src={`/projects/${image.src}`} alt={image.alt} />
     </a>

@@ -6,7 +6,7 @@ exports[`<Footer /> > should match to snapshot 1`] = `
   "baseElement": <body>
     <div>
       <footer
-        class="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-shadow"
+        class="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-paragraph"
       >
         Copyright 2023-
         2023
@@ -16,7 +16,7 @@ exports[`<Footer /> > should match to snapshot 1`] = `
   </body>,
   "container": <div>
     <footer
-      class="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-shadow"
+      class="flex h-28 w-full items-center justify-center font-spaceGrotesk font-bold text-paragraph"
     >
       Copyright 2023-
       2023

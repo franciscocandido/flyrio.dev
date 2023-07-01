@@ -6,7 +6,7 @@ exports[`<Tag /> > should match to snapshot 1`] = `
   "baseElement": <body>
     <div>
       <li
-        class="rounded border border-shadow p-1 text-shadow"
+        class="rounded border border-shadow p-1 text-paragraph"
       >
         Vitest
       </li>
@@ -14,7 +14,7 @@ exports[`<Tag /> > should match to snapshot 1`] = `
   </body>,
   "container": <div>
     <li
-      class="rounded border border-shadow p-1 text-shadow"
+      class="rounded border border-shadow p-1 text-paragraph"
     >
       Vitest
     </li>

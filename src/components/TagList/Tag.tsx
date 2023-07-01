@@ -4,6 +4,6 @@ export interface TagProps {
 
 export default function Tag({ value }: TagProps) {
   return (
-    <li className="rounded border border-shadow p-1 text-shadow">{value}</li>
+    <li className="rounded border border-shadow p-1 text-paragraph">{value}</li>
   );
 }
