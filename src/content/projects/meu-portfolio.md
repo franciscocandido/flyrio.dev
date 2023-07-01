@@ -8,9 +8,9 @@ tags:
   - TypeScript
   - Tailwind
 banner:
-  src: 564b85ca-73f6-4250-8f29-68f15ee41ab2.png
+  src: 564b85ca-73f6-4250-8f29-68f15ee41ab2.webp
 image:
-  src: 15b98ffa-1f35-4e2b-8398-256de6dce010.png
+  src: 15b98ffa-1f35-4e2b-8398-256de6dce010.webp
   alt: Uma captura de tela do meu portfólio com o texto "Oi, meu nome é Francisco Cândido, um desenvolvedor frontend do Brasil".
 ---
 
