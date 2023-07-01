@@ -1,22 +1,26 @@
 ---
-import { MdArrowBack } from 'react-icons/md/index.js';
-
 import PageLayout from '@layouts/PageLayout.astro';
 import Footer from '@components/Footer';
 import TagList from '@components/TagList';
-
+import { MdArrowBack } from 'react-icons/md/index.js';
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const { Content } = await project.render();
 
 export async function getStaticPaths() {
   const projectsEntries = await getCollection('projects');
+
   return projectsEntries.map((project) => ({
     params: { slug: project.slug },
     props: { project },
   }));
 }
-
-const { project } = Astro.props;
-const { Content } = await project.render();
 ---
 
 <PageLayout title={project.data.title}>
@@ -27,16 +31,21 @@ const { Content } = await project.render();
       class="default-margin text-shadow transition hover:cursor-pointer hover:text-foreground">
       <MdArrowBack size="40px" />
     </a>
+
     <img
       class="aria-hidden py-10"
       role="presentation"
       src={project.data.banner.src}
     />
+
     <h1 class="pb-3 text-5xl font-bold">{project.data.title}</h1>
+
     <TagList tagsArray={project.data.tags} />
+
     <article class="prose prose-invert mt-10">
       <Content />
     </article>
   </div>
+
   <Footer />
 </PageLayout>
