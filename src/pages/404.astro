@@ -1,17 +1,19 @@
 ---
 import MainLayout from '@layouts/MainLayout.astro';
-import RandomErrorMessage from '@components/RandomErrorMessage';
 ---
 
 <MainLayout title="404" description="Página não encontrada">
   <div
     class="flex h-screen w-full flex-col items-center justify-center font-spaceGrotesk">
     <h1
-      class="glitch select-none text-9xl font-bold text-highlight"
+      class="glitch select-none text-9xl font-bold text-highlight md:text-[10rem]"
       data-glitch="404">
       404
     </h1>
-    <RandomErrorMessage client:load />
+
+    <small id="error-message" class="font-bold text-paragraph md:text-base"
+    ></small>
+
     <a
       href="/"
       class="my-10 border border-accent-2 p-3 px-20 font-bold transition hover:cursor-pointer hover:border-highlight hover:bg-highlight">
@@ -19,6 +21,36 @@ import RandomErrorMessage from '@components/RandomErrorMessage';
     </a>
   </div>
 </MainLayout>
+
+<script>
+  function randomErrorMessage() {
+    const availableErrorMessages = [
+      'A força não está com você, nem com essa página.',
+      'O Expresso de Hogwarts não pode chegar até esta página.',
+      'Houston, temos um problema... e essa página também.',
+      'Parece que a TARDIS caiu antes de chegar a essa página.',
+      'Essa página foi para uma galáxia muito, muito distante...',
+      'Os Dalek exterminaram essa página. Exterminar!',
+      'Acho que nem a chave de fenda sônica pode consertar essa página.',
+      'O Laboratório de Hawkins bloqueou o acesso a essa página.',
+      'O Sex Bob-omb tocou tão alto que quebrou essa página.',
+      'Página exclusiva para membros do Vortex Club.',
+      'Murphy atacou e a página sofreu coincidências negativas.',
+      'Um Enderman teleportou essa página para um local desconhecido.',
+      'A Corporação Arasaka bloqueou o acesso. Informação restrita.',
+      'Parece que essa página sumium junto com os Nomai.',
+      'O Snorlax bloqueou o caminho para essa página.',
+    ];
+
+    return availableErrorMessages[
+      Math.floor(Math.random() * availableErrorMessages.length)
+    ];
+  }
+
+  const errorElement = document.getElementById('error-message');
+  const errorMessage = document.createTextNode(randomErrorMessage());
+  errorElement?.appendChild(errorMessage);
+</script>
 
 <style>
   .glitch-wrapper {
