@@ -2,7 +2,8 @@
 import MainLayout from '@layouts/MainLayout.astro';
 import Footer from '@components/Footer';
 import TagList from '@components/TagList';
-import { MdArrowBack } from 'react-icons/md/index.js';
+import Link from '@components/Link';
+import { MdArrowBack, MdWeb, MdCode } from 'react-icons/md';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
@@ -12,6 +13,8 @@ interface Props {
 
 const { project } = Astro.props;
 const { Content } = await project.render();
+const hasSourceCode = Boolean(project.data.source);
+const hasLiveDemo = Boolean(project.data.demo);
 
 export async function getStaticPaths() {
   const projectsEntries = await getCollection('projects');
@@ -39,6 +42,30 @@ export async function getStaticPaths() {
     />
 
     <h1 class="pb-3 text-5xl font-bold">{project.data.title}</h1>
+
+    <div class="flex gap-2">
+      {
+        hasLiveDemo && (
+          <Link
+            content="Live Demo"
+            href={project.data.demo}
+            name="Página do Projeto">
+            <MdWeb />
+          </Link>
+        )
+      }
+
+      {
+        hasSourceCode && (
+          <Link
+            content="Código Fonte"
+            href={project.data.source}
+            name="Código fonte">
+            <MdCode />
+          </Link>
+        )
+      }
+    </div>
 
     <TagList tagsArray={project.data.tags} />
 

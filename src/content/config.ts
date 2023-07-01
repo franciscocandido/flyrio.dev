@@ -4,6 +4,10 @@ const projectsCollection = defineCollection({
   type: 'content',
   schema: z.object({
     isDraft: z.boolean(),
+    title: z.string(),
+    description: z.string(),
+    demo: z.string().optional(),
+    source: z.string().optional(),
     tags: z.array(z.string()),
     image: z.object({
       src: z.string(),
@@ -12,8 +16,6 @@ const projectsCollection = defineCollection({
     banner: z.object({
       src: z.string(),
     }),
-    title: z.string(),
-    description: z.string(),
   }),
 });
 

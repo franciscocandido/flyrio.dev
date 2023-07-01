@@ -2,6 +2,7 @@
 isDraft: false
 title: flyrio.dev (Meu Portfólio)
 description: Um projeto feito utilizando Astro, React e Tailwind para armazenar meus projetos e mostrar um pouco mais das minhas habilidades.
+source: https://github.com/franciscocandido/flyrio.dev
 tags:
   - Astro
   - React
