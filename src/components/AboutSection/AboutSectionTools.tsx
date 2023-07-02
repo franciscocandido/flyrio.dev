@@ -25,7 +25,7 @@ export default function AboutSectionTools(): JSX.Element {
           <SiReact />
         </AboutSectionTool>
 
-        <AboutSectionTool href="https://nextjs.org/" inlineText="Next.JSc">
+        <AboutSectionTool href="https://nextjs.org/" inlineText="Next.JS">
           <SiNextdotjs />
         </AboutSectionTool>
 
