@@ -2,7 +2,7 @@ import {
   SiJavascript,
   SiReact,
   SiTailwindcss,
-  SiAstro,
+  SiNextdotjs,
 } from 'react-icons/si/index';
 
 import AboutSectionTool from '@components/AboutSection/AboutSectionTool';
@@ -25,14 +25,14 @@ export default function AboutSectionTools(): JSX.Element {
           <SiReact />
         </AboutSectionTool>
 
+        <AboutSectionTool href="https://astro.build/" inlineText="Astro">
+          <SiNextdotjs />
+        </AboutSectionTool>
+
         <AboutSectionTool
           href="https://tailwindcss.com/"
           inlineText="TailwindCSS">
           <SiTailwindcss />
-        </AboutSectionTool>
-
-        <AboutSectionTool href="https://astro.build/" inlineText="Astro">
-          <SiAstro />
         </AboutSectionTool>
       </div>
     </>

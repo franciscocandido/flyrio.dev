@@ -1,6 +1,6 @@
 import BaseSection from '@components/BaseSection';
 import AboutSectionTools from '@components/AboutSection/AboutSectionTools';
-import EmailButton from '@components/EmailButton';
+import EmailLink from '@components/EmailLink';
 
 export default function Aboutsection(): JSX.Element {
   return (
@@ -24,7 +24,7 @@ export default function Aboutsection(): JSX.Element {
           </p>
         </div>
 
-        <EmailButton />
+        <EmailLink />
         <AboutSectionTools />
       </div>
     </BaseSection>
