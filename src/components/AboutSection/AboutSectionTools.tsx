@@ -25,7 +25,7 @@ export default function AboutSectionTools(): JSX.Element {
           <SiReact />
         </AboutSectionTool>
 
-        <AboutSectionTool href="https://astro.build/" inlineText="Astro">
+        <AboutSectionTool href="https://nextjs.org/" inlineText="Next.JSc">
           <SiNextdotjs />
         </AboutSectionTool>
 
