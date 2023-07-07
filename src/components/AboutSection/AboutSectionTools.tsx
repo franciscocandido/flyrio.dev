@@ -16,24 +16,27 @@ export default function AboutSectionTools(): JSX.Element {
 
       <div className="grid grid-flow-col grid-rows-2 place-content-center gap-5 md:grid-rows-1">
         <AboutSectionTool
+          icon={SiJavascript}
           href="https://developer.mozilla.org/docs/Web/JavaScript"
-          inlineText="JavaScript">
-          <SiJavascript />
-        </AboutSectionTool>
-
-        <AboutSectionTool href="https://react.dev/" inlineText="React">
-          <SiReact />
-        </AboutSectionTool>
-
-        <AboutSectionTool href="https://nextjs.org/" inlineText="Next.JS">
-          <SiNextdotjs />
-        </AboutSectionTool>
+          inlineText="JavaScript"
+        />
 
         <AboutSectionTool
+          icon={SiReact}
+          href="https://react.dev/"
+          inlineText="React"
+        />
+
+        <AboutSectionTool
+          icon={SiNextdotjs}
+          href="https://nextjs.org/"
+          inlineText="Next.JS"></AboutSectionTool>
+
+        <AboutSectionTool
+          icon={SiTailwindcss}
           href="https://tailwindcss.com/"
-          inlineText="TailwindCSS">
-          <SiTailwindcss />
-        </AboutSectionTool>
+          inlineText="TailwindCSS"
+        />
       </div>
     </>
   );

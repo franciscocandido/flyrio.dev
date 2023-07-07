@@ -1,0 +1,20 @@
+---
+import ContactSectionLink from '@components/ContactSection/ContactSectionLink';
+import BaseSection from '@components/BaseSection';
+import EmailLink from '@components/EmailLink';
+
+import { SiGithub } from 'react-icons/si/index';
+import { IconContext } from 'react-icons';
+---
+
+<BaseSection title="Contato" id="contact">
+  <EmailLink client:visible />
+
+  <div class="mt-10 flex justify-center gap-x-10">
+    <ContactSectionLink
+      icon={SiGithub}
+      href="https://github.com/flyri0/"
+      name="Meu perfil no GitHub."
+    />
+  </div>
+</BaseSection>
