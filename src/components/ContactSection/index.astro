@@ -8,13 +8,13 @@ import { IconContext } from 'react-icons';
 ---
 
 <BaseSection title="Contato" id="contact">
-  <EmailLink client:visible />
-
-  <div class="mt-10 flex justify-center gap-x-10">
+  <div class="flex flex-col items-center justify-center gap-x-10">
     <ContactSectionLink
       icon={SiGithub}
       href="https://github.com/flyri0/"
       name="Meu perfil no GitHub."
     />
+
+    <EmailLink client:visible />
   </div>
 </BaseSection>
