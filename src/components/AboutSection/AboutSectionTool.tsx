@@ -1,14 +1,14 @@
-import type { ReactNode } from 'react';
+import type { ElementType } from 'react';
 import { IconContext } from 'react-icons';
 
 export interface AboutSectionToolProps {
-  children: ReactNode;
+  icon: ElementType;
   href?: string;
   inlineText: string;
 }
 
 export default function AboutSectionTool({
-  children,
+  icon: Icon,
   href,
   inlineText,
 }: AboutSectionToolProps): JSX.Element {
@@ -18,7 +18,7 @@ export default function AboutSectionTool({
         href={href}
         target="_blank"
         className="flex cursor-default flex-row items-center gap-x-2 font-spaceGrotesk font-bold transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight">
-        {children} <p>{inlineText}</p>
+        <Icon /> <p>{inlineText}</p>
       </a>
     </IconContext.Provider>
   );

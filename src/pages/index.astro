@@ -3,17 +3,17 @@ import MainLayout from '@layouts/MainLayout.astro';
 
 import Navbar from '@components/Navbar';
 import HeroSection from '@components/HeroSection';
-import AboutSection from '@components/AboutSection';
 import ProjectsSection from '@components/ProjectsSection';
-import ContactSection from '@components/ContactSection';
+import ContactSection from '@components/ContactSection/index.astro';
 import Footer from '@components/Footer';
+import AboutSection from '@components/AboutSection/index.astro';
 ---
 
 <MainLayout title="Início" description="Bem-vindo ao meu portfólio">
   <Navbar client:load />
   <HeroSection />
-  <AboutSection client:visible />
+  <AboutSection />
   <ProjectsSection />
-  <ContactSection client:visible />
+  <ContactSection />
   <Footer />
 </MainLayout>

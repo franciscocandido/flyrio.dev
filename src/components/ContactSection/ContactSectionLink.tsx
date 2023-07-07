@@ -1,13 +1,12 @@
-import type { ReactNode } from 'react';
-
+import type { ElementType } from 'react';
 export interface ContactSectionLinkProps {
-  children: ReactNode;
+  icon: ElementType;
   href: string;
   name: string;
 }
 
 export default function ContactSectionLink({
-  children,
+  icon: Icon,
   href,
   name,
 }: ContactSectionLinkProps): JSX.Element {
@@ -16,7 +15,7 @@ export default function ContactSectionLink({
       className="transition hover:-translate-y-0.5 hover:cursor-pointer hover:text-highlight"
       aria-label={name}
       href={href}>
-      {children}
+      <Icon size="30px" />
     </a>
   );
 }
