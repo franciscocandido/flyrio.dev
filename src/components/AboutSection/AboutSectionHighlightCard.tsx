@@ -8,8 +8,8 @@ export default function AboutSectionHighlightCard({
   description,
 }: AboutSectionHighlightCardProps): JSX.Element {
   return (
-    <div className="flex h-64 w-64 select-none flex-col items-center justify-center gap-y-5 rounded border border-shadow p-5 text-center text-paragraph">
-      <h1 role="presentation" className="text-5xl">
+    <div className="flex flex-col items-center gap-2 rounded border border-accent-2 p-5 text-center">
+      <h1 role="presentation" className="select-none text-3xl">
         {emoji}
       </h1>
       <p>{description}</p>
